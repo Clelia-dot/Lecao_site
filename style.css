@@ -9,6 +9,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+    p {
+    text-align: center;
+}
+
 .hero-img {
     background-image: url('img/image/Chocolat2.png');
     background-position: center;
@@ -74,7 +78,7 @@ h1 {
 }
 
 p {
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 15px;
 
@@ -87,6 +91,7 @@ p {
     flex-direction: column;
     align-items: center;
     color: #E55611;
+    text-align: center;
     
 }
 
@@ -95,8 +100,11 @@ p {
     border: 0;
     background-color: #E55611;
     width: 100px;
+    
 
-}
+    }    
+
+
 
 .search_bloc {
     height: 40px;
@@ -110,6 +118,10 @@ p {
 
 .icon_search {
     width: 20px;
+
+    .p{
+    text-align: center;
+    }    
 }
 
 /* 
@@ -183,25 +195,40 @@ p {
 }
 
 .image_cacao{
- width: 611px ; 
- height:376px ;  
+    width: 45%;
+    height: 376px;
+    object-fit: cover;
+}
+
+.image_cote_divoire {
+    width: 55%;
+    object-fit: cover;
 }
 
 
 .history_container-blocs{
 display: flex;
-background-color: #F0A330;
+background-color: #E55611;
 width: 100%;
 height: fit-content;
 justify-content: space-between;
 
+
 .history_bloc {
-    width: 50%;
+    width: 45%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    history_text-bloc {
 
+    h3 {
+        text-align: start;
+        padding: 10px;
+        justify-content: center;
+    }
+    p {
+        text-align: start;
+        padding: 20px;
     }
 
 }
@@ -213,9 +240,13 @@ h3{
     }
 
 
-}
+}  
 
 .history_texte_bloc {
+   p{
+    display: flex;
+    text-align: center; 
+   }
    
 }
 
@@ -223,19 +254,295 @@ h3{
 
 .filiere_container-blocs{
     display: flex;
-    background-color: #F0A330;
+    flex-direction: row-reverse;
+    background-color:#09913F;
     width: 100%;
     height: fit-content;
     justify-content: space-between;
-    
+    margin-bottom:100px ;
+
     .filiere_bloc {
-        width: 50%;
+        width: 45%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        filiere_text-bloc {
-    
+        padding: 20;
+        p {
+            text-align: start;
+            padding: 30px;
         }
     
+
     }
+
+    
+}
+ h4{
+        color: white;   
+        text-align: center;
+        }
+
+
+.vidéo_container-bloc{
+    display: flex;
+    background-color: #E55611;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-inline: 20px;
+    
+    .vidéo_bloc {
+        
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        p{
+         text-align: start;   
+        }
+     
+
+    }   
+
+
+}
+
+.banniere_container-blocs{
+    background-image: url('./img/image/chocolate-nuts-black\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+.image_bnnière_chocolat { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    
+  
+   }
+
+
+.tablette{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center; 
+      box-sizing: border-box;
+
+      padding: 50px;
+      height: 700px;
+     
+}
+
+
+
+.tablette_packaging{
+  
+   width: 150px;
+   
+}
+
+
+.texte_tablette{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    p {
+          color: black;
+          text-align: center;
+    }
+}
+
+
+
+/* 
+    
+    button {
+        color: white;
+        background-color :#09913F;
+        height: 43px;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        transition: 500ms;
+    
+    
+    }
+
+    button:hover { 
+        color :#09913F; 
+        background-color: rgba(255, 255, 255, 0);
+        border: solid #09913F 2px;
+
+} */
+
+.tablette_button {
+color: white;
+height: 43px;
+width: 100px;
+justify-content: center;
+align-items: center;
+border: none;
+transition: 500ms;
+}
+
+button:hover { 
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.greenbutton {
+    background-color: #09913F;
+}
+
+.greenbutton:hover {
+    color :#09913F; 
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #09913F 2px;
+}
+.bluebutton {
+    background-color: #27346B;
+}
+
+.bluebutton:hover {
+    color :#27346B; 
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #27346B 2px;
+}
+.orangebutton {
+    background-color: #E6942E;
+}
+
+.orangebutton:hover {
+    color :#E6942E; 
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #E6942E 2px;
+   
+}
+.pinkbutton{
+    background-color: #BB7AAA;
+}
+
+.pinkbutton:hover {
+    color :#BB7AAA; 
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #BB7AAA 2px;
+}
+
+.tablette_packaging1{
+  
+    width: 150px;
+   
+}
+
+
+.tablette_packaging2{
+   
+    width: 150px;
+}
+
+
+.tablette_packaging3{
+   
+    width: 150px;
+}
+
+   
+
+.banniere-blocs{
+    background-image: url('./img/image/Bnnière\ cacao\ 1.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+
+    h2 {
+        background-color: rgba(0, 0, 0, 0.318);
+        text-align: center;
+        width: 50%;
+    }
+}
+
+
+.image_bnnière_chocolat { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 100 px;
+
+
+    .rectangle_image{
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+      }
+
+}  
+
+.témoignage_container-blocs{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding:100px;
+   
+    
+}   
+    
+    .témoignage_bloc {
+        
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: black;
+            background-color: #09913F;
+            background-size: 100px;
+    
+            }
+      
+      
+    }    
+
+
+
+    .image_cacaotree {
+     box-shadow: 10px 10px #F0A330;
+     
+
+}
+
+
+.footer_bloc{
+    display: flex;
+    justify-content: center;
+    background-color: #09913F;
+    padding: 200px
+    
 }
