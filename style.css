@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+input::placeholder {
+  color: rgba(255, 255, 255, 0.889);
+}
+
 .hero-img {
     background-image: url('img/image/Chocolat2.png');
     background-position: center;
@@ -114,6 +118,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   
 }
 
 .icon_search {
@@ -121,6 +126,7 @@ p {
 
     .p{
     text-align: center;
+   
     }    
 }
 
@@ -156,16 +162,16 @@ p {
 
     align-items: flex-start;
     justify-content: center;
-    padding: 50px;
+    padding: 60px;
 }
 
 .txt_hero {
     height: 30%;
     display: flex;
     flex-direction: column;
-
+    gap: 10px;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: start;
 
     button {
     
@@ -180,11 +186,17 @@ p {
         transition: 500ms;
     
     }
+
     button:hover { 
         color :#E55611; 
         background-color: rgba(255, 255, 255, 0);
         border: solid #E55611 2px;
         
+        
+    }
+
+    p {
+        text-align: start ;
     }
 }
  
@@ -215,7 +227,7 @@ justify-content: space-between;
 
 
 .history_bloc {
-    width: 45%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -393,6 +405,13 @@ h3{
 
 } */
 
+.tablette-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
 .tablette_button {
 color: white;
 height: 43px;
@@ -417,14 +436,14 @@ button:hover {
     background-color: rgba(255, 255, 255, 0);
     border: solid #09913F 2px;
 }
-.bluebutton {
-    background-color: #27346B;
+.rosebutton {
+    background-color: #D71246;
 }
 
-.bluebutton:hover {
-    color :#27346B; 
+.rosebutton:hover {
+    color :#D71246; 
     background-color: rgba(255, 255, 255, 0);
-    border: solid #27346B 2px;
+    border: solid #D71246 2px;
 }
 .orangebutton {
     background-color: #E6942E;
@@ -446,6 +465,15 @@ button:hover {
     border: solid #BB7AAA 2px;
 }
 
+
+
+.tablette_packaging{
+  
+    width: 150px;
+}   
+
+
+
 .tablette_packaging1{
   
     width: 150px;
@@ -462,6 +490,7 @@ button:hover {
 .tablette_packaging3{
    
     width: 150px;
+    align-items: center;
 }
 
    
@@ -508,21 +537,27 @@ button:hover {
     height: fit-content;
     justify-content: space-between;
     margin-top: 50px;
-    padding:100px;
+    padding:50px;
    
     
 }   
     
     .témoignage_bloc {
         
-        width: 60%;
+        width: 55%;
+        height: 300px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start ;
+        align-items: start;
+        background-color: #09913F;
+       
         p{
+          
             color: black;
-            background-color: #09913F;
+            text-align: left;
+          
             background-size: 100px;
     
             }
@@ -533,6 +568,7 @@ button:hover {
 
 
     .image_cacaotree {
+        max-width: 40%;
      box-shadow: 10px 10px #F0A330;
      
 
@@ -543,7 +579,7 @@ button:hover {
 
 footer {
     display: flex;
-    padding: 0 20px;
+    padding: 0 200px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -555,10 +591,266 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 30px;
+        color: white;
+
+    }
+ 
+    a{
+    color: white;
+    text-decoration: none;
+    
     }
 
+
+   .cacao{
+    width:70px;
+
+   }
     .footer-line {
         height: 300px;
         border-right: solid white 2px;
     }
+}
+
+.footer-icone {
+    display: flex;
+    width: 20px; 
+    gap: 10px;
+
+}
+
+
+.footer_bloc-lien{
+    
+color: white;
+
+}
+.facebook {
+    width: 50px; 
+    justify-content : padding ;
+}
+
+.header-product {
+
+    a {
+        color: #09913F;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color :#bb7aaa;
+    }
+
+
+    .logo_vert{
+         height: 50px;
+    }
+}    
+    
+main{
+
+ h1{
+ color: #09913F;   
+ text-align: center;
+ align-items: baseline;
+ }   
+
+
+}
+
+    .info-product {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-inline: 50px; 
+
+
+  .info-product-txt{
+    background-color: #be8eb1ab;
+    padding: 20px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+
+     h2{
+    font-size:35px; 
+    color: #09913F;   
+    text-align: center;
+    } 
+
+
+    p{
+    color:black ;
+    justify-content: start ;
+    text-align: left;
+    justify-content: space-between;
+    }
+
+
+ hr {
+    width: 95%;
+    border: solid 1px;
+    color: #09913F;
+   
+}
+     
+
+ .text-prix {
+    width: 80%;
+p{
+  color:black ;
+  text-align: start;  
+  justify-content: start;
+ }  
+ 
+}
+
+.bloc-numcart_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.quantite-texte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border: solid #09913F 2px;
+    height: 100%;
+   
+
+    p{
+        text-align: center;
+        
+    }
+
+}
+    
+}
+
+  }
+
+
+.bloc-numcart{
+  flex-direction: row ;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+ 
+
+   button{
+    background-color: #09913F;
+    border: none;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    color: white;
+    
+    
+    }
+ 
+    button:hover { 
+        color :#09913F; 
+        background-color: rgba(255, 255, 255, 0);
+        border: solid #09913F 2px;
+        
+    }
+}
+
+.product-desc-bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    
+}
+
+
+  
+
+.ingredient{
+
+
+ 
+
+ 
+
+
+ .ingredient-composition{
+  flex-direction: row ;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-right: 250px;
+
+
+
+    padding: 15px;
+    
+   hr{
+    width: 100%;
+    border: solid 1px;
+    color: #09913F;
+   }
+
+ 
+
+ } 
+
+
+p{
+    color:black ;
+    text-align: left;
+    
+    }
+
+
+ }
+
+.bloc-button{
+display: flex;
+margin-top: 20px;
+width: 80%;
+gap: 20px;
+border: none;
+justify-content: flex-start;
+
+button{
+background-color: #09913F;
+    border: none;
+    height: 50spx;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    color: white;
+    
+    
+    }
+ 
+    button:hover { 
+        color :#09913F; 
+        background-color: rgba(255, 255, 255, 0);
+        border: solid #09913F 2px;
+        
+    }
+   
+
+}
+
+.bloc-ajouter{
+
+    
 }
