@@ -346,6 +346,7 @@ h4 {
     margin-top: 50px;
 }
 
+
 .image_bnnière_chocolat {
     display: flex;
     align-items: center;
@@ -569,7 +570,9 @@ button:hover {
     width: 100%;
     height: fit-content;
     justify-content: space-between;
-    /* margin-bottom: 100px; */
+    margin-bottom: 50px;
+    padding: 40px;
+
     
 
 
@@ -611,18 +614,25 @@ button:hover {
 .temoignage_button {
     color: white;
     height: 43px;
-    width: 100px;
+    width: 130px;
     margin:auto;
     justify-content: center;
     align-items: baseline;
     border: none;
     transition: 500ms;
+ 
 }
 
-.action {}
+.action {
+ background-color:#F0A330;  
+}
 
 
-
+.action:hover {
+    color: #F0A330;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid #F0A330 2px;
+}
 
 
 .image_cacaotree {
