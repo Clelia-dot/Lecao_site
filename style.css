@@ -569,7 +569,8 @@ button:hover {
     width: 100%;
     height: fit-content;
     justify-content: space-between;
-    margin-bottom: 50px;
+    /* margin-bottom: 100px; */
+    
 
 
 }
@@ -581,6 +582,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 20;
+    
 
     h1 {
         font-size: 20px;
